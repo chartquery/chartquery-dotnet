@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>ChartQuery</AssemblyName>
+    <RootNamespace>ChartQuery</RootNamespace>
+    <PackageId>ChartQuery</PackageId>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <Title>ChartQuery .NET SDK</Title>
+    <Authors>ChartQuery</Authors>
+    <Company>ChartQuery</Company>
+    <Copyright>Copyright (c) 2026 ChartQuery</Copyright>
+    <Description>Official .NET SDK for the ChartQuery chart and QR code API.</Description>
+    <PackageTags>chart-api;qr-code-api;barcode-api;diagram-api;api;sdk;chartquery</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://www.chartquery.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/chartquery/chartquery-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" Link="README.md" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" Link="LICENSE" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="ChartQuery.Tests" />
+  </ItemGroup>
+</Project>
